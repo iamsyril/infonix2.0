@@ -26,7 +26,7 @@ const Events = () => {
       name: 'Paper Presentation',
       description: 'Showcase your research and innovative ideas through structured presentations.',
       rules: [
-        '3/4 members  for paper presentation ',
+        '3 members  for paper presentation ',
         '10 to 12 minutes : 3 mins for asking queries overall( 15mins ) ',
         'PPT format required maximum slides 10',
         'Domain:related to currently developing technologies'
