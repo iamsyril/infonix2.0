@@ -10,7 +10,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'infonix2k25symposium@gmail.com',
+      value: 'infonix2.0symposium@gmail.com',
       action: () => window.open('mailto:infonix2k25symposium@gmail.com'),
     },
     {

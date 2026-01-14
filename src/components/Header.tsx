@@ -55,7 +55,7 @@ const Header = () => {
             </button>
             <Button 
               variant="primary"
-              onClick={() => window.open('https://forms.google.com/your-registration-form', '_blank')}
+              onClick={() => window.open('https://forms.gle/VzE6SpTFyXUXS1Nd6', '_blank')}
             >
               Register Now
             </Button>
@@ -101,7 +101,7 @@ const Header = () => {
               <Button 
                 variant="primary"
                 className="w-fit"
-                onClick={() => window.open('https://forms.google.com/your-registration-form', '_blank')}
+                onClick={() => window.open('https://forms.gle/VzE6SpTFyXUXS1Nd6', '_blank')}
               >
                 Register Now
               </Button>

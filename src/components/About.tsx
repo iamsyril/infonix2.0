@@ -42,10 +42,10 @@ const About = () => {
           }`}
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-            About <span className="bg-gradient-primary bg-clip-text text-transparent">Infonix 2k25</span>
+            About <span className="bg-gradient-primary bg-clip-text text-transparent">Infonix 2.0</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Infonix 2k25 is the premier National Level Technical Symposium hosted by the 
+            Infonix 2.0 is the premier National Level Technical Symposium hosted by the 
             University College of Engineering, Villupuram . This prestigious 
             event brings together brilliant minds from across the nation to showcase innovation, 
             share knowledge, and compete in diverse technical and non-technical challenges.
@@ -70,7 +70,7 @@ const About = () => {
                 Our symposium serves as a dynamic platform where students can demonstrate 
                 their technical prowess, creative thinking, and problem-solving abilities. 
                 From cutting-edge paper presentations to exciting debugging challenges, 
-                Infonix 2k25 offers diverse opportunities for learning and growth.
+                Infonix 2.0 offers diverse opportunities for learning and growth.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Join us in this celebration of knowledge, innovation, and academic excellence. 

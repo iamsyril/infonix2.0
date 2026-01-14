@@ -40,7 +40,7 @@ const Registration = () => {
             <Button 
               variant="primary"
               className="w-full"
-              onClick={() => window.open('https://forms.google.com/your-registration-form', '_blank')}
+              onClick={() => window.open('https://forms.gle/VzE6SpTFyXUXS1Nd6', '_blank')}
             >
               <ExternalLink size={16} className="mr-2" />
               Register Online Now
@@ -119,12 +119,12 @@ const Registration = () => {
             <div>
               <span className="font-medium text-primary">Online Registration Deadline:</span>
               <br />
-              <span className="text-muted-foreground">October 25, 2025</span>
+              <span className="text-muted-foreground">January 28, 2026</span>
             </div>
             <div>
               <span className="font-medium text-accent">Event Date:</span>
               <br />
-              <span className="text-muted-foreground">October 31, 2025</span>
+              <span className="text-muted-foreground">January 30, 2026</span>
             </div>
           </div>
         </div>

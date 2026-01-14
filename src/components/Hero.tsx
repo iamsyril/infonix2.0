@@ -12,7 +12,7 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2025-10-31T23:59:59').getTime();
+     const targetDate = new Date('2026-01-30T09:00:00').getTime();
 
 
     const updateCountdown = () => {
@@ -91,7 +91,7 @@ const Hero = () => {
         <h1 className="text-6xl lg:text-8xl font-heading font-bold tracking-tight mb-6 fade-in">
           <span className="text-primary glow-text">INFONIX</span>
           <br />
-          <span className="text-accent text-4xl lg:text-6xl">2k25</span>
+          <span className="text-accent text-4xl lg:text-6xl">2.0</span>
         </h1>
         
         <div className="w-full max-w-md mx-auto h-1 bg-gradient-to-r from-transparent via-primary to-transparent mb-6 fade-in" style={{ animationDelay: '0.2s' }}></div>
@@ -132,11 +132,11 @@ const Hero = () => {
         <div className="flex flex-col items-center space-y-3 mb-8">
           <div className="flex items-center space-x-2 text-muted-foreground fade-in" style={{ animationDelay: '0.6s' }}>
             <Calendar size={20} />
-            <span className="font-medium">Online Registration Ends: October 25, 2025</span>
+            <span className="font-medium">Online Registration Ends: January 28, 2026</span>
           </div>
           <div className="flex items-center space-x-2 text-primary glow-text text-lg fade-in" style={{ animationDelay: '0.65s' }}>
             <Calendar size={22} />
-            <span className="font-semibold">Event Date: October 31, 2025</span>
+            <span className="font-semibold">Event Date: January 30, 2026</span>
           </div>
         </div>
 
@@ -145,7 +145,7 @@ const Hero = () => {
             variant="primary"
             size="lg"
             className="text-lg px-8 py-4 cyberpunk-button-primary"
-            onClick={() => window.open('https://forms.google.com/your-registration-form', '_blank')}
+            onClick={() => window.open('https://forms.gle/VzE6SpTFyXUXS1Nd6', '_blank')}
           >
             REGISTER HERE
           </Button>

@@ -106,7 +106,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-primary-foreground/20">
           <div className="flex justify-center items-center">
             <p className="text-primary-foreground/80 text-sm text-center">
-              © 2025 Infonix 2K25 Symposium. All Rights Reserved.
+              ©  Infonix 2.0 Symposium. All Rights Reserved.
             </p>
           </div>
         </div>
