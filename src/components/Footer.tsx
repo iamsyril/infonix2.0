@@ -68,11 +68,11 @@ const Footer = () => {
             <h4 className="font-heading font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3 text-sm">
               <a 
-                href="mailto:infonix2k25symposium@gmail.com"
+                href="mailto:infonix2.0symposium@gmail.com"
                 className="flex items-center space-x-2 text-primary-foreground/80 hover:text-primary transition-colors"
               >
                 <Mail size={16} />
-                <span>infonix2k25symposium@gmail.com</span>
+                <span>infonix2.0symposium@gmail.com</span>
               </a>
               <a 
                 href="https://www.instagram.com/infonix_2k25?igsh=MTR6OGJvM3FnN2RnaQ=="
@@ -81,7 +81,7 @@ const Footer = () => {
                 className="flex items-center space-x-2 text-primary-foreground/80 hover:text-primary transition-colors"
               >
                 <Instagram size={16} />
-                <span>@Infonix_2K25</span>
+                <span>@Infonix2.0</span>
                 <ExternalLink size={12} />
               </a>
               <a 
@@ -92,11 +92,11 @@ const Footer = () => {
                 <span>+91 63806 12880</span>
               </a>
               <a 
-                href="tel:+919361237734"
+                href="tel:+919363155733"
                 className="flex items-center space-x-2 text-primary-foreground/80 hover:text-primary transition-colors"
               >
                 <Phone size={16} />
-                <span>+91 93612 37734</span>
+                <span>+91 9363155733</span>
               </a>
             </div>
           </div>
