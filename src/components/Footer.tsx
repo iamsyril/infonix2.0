@@ -16,10 +16,10 @@ const Footer = () => {
                 alt="Infonix Logo" 
                 className="h-12 w-auto object-contain drop-shadow-md"
               />
-              <span className="font-heading font-bold text-xl">Infonix 2K25</span>
+              <span className="font-heading font-bold text-xl">Infonix 2.0</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              National Level Technical Symposium 2K25 hosted by University College of 
+              National Level Technical Symposium 2.0 hosted by University College of 
               Engineering Villupuram, fostering innovation and excellence in technology.
             </p>
           </div>
