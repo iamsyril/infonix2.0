@@ -55,7 +55,7 @@ const Header = () => {
             </button>
             <Button 
               variant="primary"
-              onClick={() => window.open('https://forms.gle/VzE6SpTFyXUXS1Nd6', '_blank')}
+              onClick={() => window.open('https://forms.gle/quw6AkwY9np5g1HVA', '_blank')}
             >
               Register Now
             </Button>
@@ -101,7 +101,7 @@ const Header = () => {
               <Button 
                 variant="primary"
                 className="w-fit"
-                onClick={() => window.open('https://forms.gle/VzE6SpTFyXUXS1Nd6', '_blank')}
+                onClick={() => window.open('https://forms.gle/quw6AkwY9np5g1HVA', '_blank')}
               >
                 Register Now
               </Button>
