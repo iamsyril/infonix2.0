@@ -40,7 +40,7 @@ const Registration = () => {
             <Button 
               variant="primary"
               className="w-full"
-              onClick={() => window.open('https://forms.gle/VzE6SpTFyXUXS1Nd6', '_blank')}
+              onClick={() => window.open('https://forms.gle/quw6AkwY9np5g1HVA', '_blank')}
             >
               <ExternalLink size={16} className="mr-2" />
               Register Online Now
