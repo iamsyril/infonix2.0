@@ -11,12 +11,12 @@ const Contact = () => {
       icon: Mail,
       label: 'Email',
       value: 'infonix2.0symposium@gmail.com',
-      action: () => window.open('mailto:infonix2k25symposium@gmail.com'),
+      action: () => window.open('mailto:infonix2.0symposium@gmail.com'),
     },
     {
       icon: Instagram,
       label: 'Instagram',
-      value: '@Infonix_2K25',
+      value: '@Infonix2.0',
       action: () => window.open('https://www.instagram.com/infonix_2k25?igsh=MTR6OGJvM3FnN2RnaQ==', '_blank'),
     },
     {
@@ -28,8 +28,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: 'Alternate Phone',
-      value: '+91 93612 37734',
-      action: () => window.open('tel:+9193612 37734'),
+      value: '+91 9363155733',
+      action: () => window.open('tel:+919363155733'),
     },
   ];
 
@@ -102,7 +102,7 @@ const Contact = () => {
                 <Button 
                   variant="accent"
                   className="flex-1"
-                  onClick={() => window.open('tel:+918940354802')}
+                  onClick={() => window.open('tel:+919361237734')}
                 >
                   <Phone size={16} className="mr-2" />
                   Call Now
@@ -110,7 +110,7 @@ const Contact = () => {
                 <Button 
                   variant="primary"
                   className="flex-1"
-                  onClick={() => window.open('mailto:iamsyril21@gmail.com')}
+                  onClick={() => window.open('mailto:infonix2.0symposium@gmail.com')}
                 >
                   <Mail size={16} className="mr-2" />
                   Send Email
