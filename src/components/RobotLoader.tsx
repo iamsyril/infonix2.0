@@ -68,7 +68,7 @@ const RobotLoader = () => {
       
       {/* Loading Text */}
       <div className="absolute bottom-1/4 text-primary text-sm font-heading tracking-wider animate-pulse">
-        INITIALIZING INFONIX 2k25...
+        INITIALIZING INFONIX 2.0...
       </div>
     </div>
   );
