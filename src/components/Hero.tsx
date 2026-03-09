@@ -1,176 +1,131 @@
-import { useEffect, useState } from 'react';
-import { Calendar, Clock, Users } from 'lucide-react';
+import { IndianRupee, Calendar, UtensilsCrossed, Clock, Coffee,ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroTechSpace from '@/assets/hero-tech-space.jpg';
 
-const Hero = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  useEffect(() => {
-     const targetDate = new Date('2026-03-16T00:00:00').getTime();
-
-
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const difference = targetDate - now;
-
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000),
-        });
-      }
-    };
-
-    updateCountdown();
-    const interval = setInterval(updateCountdown, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+const Registration = () => {
   return (
-    <section 
-      id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-16"
-    >
-	{/* Fixed Parallax Background */}
-      <div 
-        className="fixed inset-0 bg-cover bg-center animate-slow-pan opacity-30 -z-10"
-        style={{ backgroundImage: `url(${heroTechSpace})`, backgroundAttachment: 'sticky' }}
-      />
-      <div className="fixed inset-0 bg-gradient-hero -z-10" />
-      <div className="fixed inset-0 hero-gradient-mesh -z-10" />
-      
+    <section id="registration" className="section-padding bg-muted/30">
+      <div className="container mx-auto px-4 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+            Registration & <span className="bg-gradient-primary bg-clip-text text-transparent">Fees</span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Simple and affordable registration process. Join us for an unforgettable 
+            learning experience with complimentary refreshments.
+          </p>
+        </div>
 
-      {/* Animated Tech Space Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center animate-slow-pan opacity-30"
-        style={{ backgroundImage: `url(${heroTechSpace})` ,  }}
-      />
-      <div className="absolute inset-0 bg-gradient-hero" />
-      <div className="absolute inset-0 hero-gradient-mesh" />
-      
-      {/* Grid Pattern Overlay */}
-      <div className="absolute inset-0 hero-grid-pattern opacity-20" />
-      
-      {/* Radial Glow Effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-[120px]" />
-      
-      {/* Floating Particles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float-slow" style={{ animationDelay: '0s' }} />
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-accent rounded-full animate-float-medium" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-primary/70 rounded-full animate-float-fast" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-2/3 right-1/4 w-1 h-1 bg-accent/70 rounded-full animate-float-slow" style={{ animationDelay: '3s' }} />
-        <div className="absolute bottom-1/3 right-2/3 w-2 h-2 bg-primary/50 rounded-full animate-float-medium" style={{ animationDelay: '4s' }} />
-      </div>
-      
-      {/* Geometric Background Elements with Glow and Movement */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-20 w-32 h-32 border-2 border-primary/30 rounded-full glow-pulse-primary animate-float-diagonal-1"></div>
-        <div className="absolute top-60 right-80 w-20 h-20 border-2 border-accent/40 rounded-full glow-pulse-accent animate-float-diagonal-2" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-40 right-40 w-48 h-48 border-2 border-primary/20 rounded-full glow-pulse-primary animate-float-circular" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-accent/30 rounded-full glow-pulse-accent animate-float-diagonal-3" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute top-40 left-60 w-16 h-16 border-2 border-primary/40 rounded-full glow-pulse-primary animate-float-diagonal-1" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute top-96 left-96 w-36 h-36 border-2 border-accent/25 rounded-full glow-pulse-accent animate-float-circular" style={{ animationDelay: '5s' }}></div>
-      </div>
-      
-      {/* Scan Lines Effect */}
-      <div className="absolute inset-0 hero-scanlines pointer-events-none" />
-      
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
-        {/* Title */}
-        <h1 className="text-6xl lg:text-8xl font-heading font-bold tracking-tight mb-6 fade-in">
-          <span className="text-primary glow-text">INFONIX 2.0</span>
-          <br />
+        {/* Registration Cards */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Online Registration */}
+          <div className="event-card text-center">
+            <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-elegant">
+              <Calendar size={28} className="text-primary-foreground" />
+            </div>
+            
+            <h3 className="text-2xl font-heading font-semibold text-foreground mb-4">
+              Online Registration
+            </h3>
+            
+            <div className="flex items-center justify-center space-x-2 mb-4">
+              <IndianRupee size={24} className="text-primary" />
+              <span className="text-3xl font-heading font-bold text-primary">200</span>
+            </div>
+            
+            <p className="text-muted-foreground mb-6">
+              Early bird pricing for advance registration. Secure your spot and avoid last-minute rush.
+            </p>
+            
+            <Button 
+              variant="primary"
+              className="w-full"
+              onClick={() => window.open('https://forms.gle/quw6AkwY9np5g1HVA', '_blank')}
+            >
+              <ExternalLink size={16} className="mr-2" />
+              Register Online Now
+            </Button>
+          </div>
 
-        </h1>
-        
-        <div className="w-full max-w-md mx-auto h-1 bg-gradient-to-r from-transparent via-primary to-transparent mb-6 fade-in" style={{ animationDelay: '0.2s' }}></div>
-        
-        <p className="text-xl lg:text-3xl text-primary glow-text mb-3 fade-in" style={{ animationDelay: '0.3s' }}>
-          University College of Engineering Villupuram
-        </p>
-        
-        <p className="text-lg lg:text-xl text-muted-foreground mb-6 fade-in" style={{ animationDelay: '0.35s' }}>
-          Department of Information Technology
-        </p>
-        
-        <p className="text-2xl lg:text-3xl text-primary mb-8 font-medium fade-in" style={{ animationDelay: '0.4s' }}>
-          The Pulse of Innovation
-        </p>
+          {/* On-spot Registration */}
+          <div className="event-card text-center">
+            <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-6 shadow-glow">
+              <Clock size={28} className="text-accent-foreground" />
+            </div>
+            
+            <h3 className="text-2xl font-heading font-semibold text-foreground mb-4">
+              On-spot Registration
+            </h3>
+            
+            <div className="flex items-center justify-center space-x-2 mb-4">
+              <IndianRupee size={24} className="text-accent" />
+              <span className="text-3xl font-heading font-bold text-accent">250</span>
+            </div>
+            
+            <p className="text-muted-foreground mb-6">
+              Register directly at the venue on event day. Subject to availability and venue capacity.
+            </p>
+            
+            <div className="bg-muted/50 rounded-lg p-4">
+              <p className="text-sm text-muted-foreground">
+                On-spot registration available at the venue during event hours
+              </p>
+            </div>
+          </div>
+        </div>
 
-        {/* Countdown Timer */}
-        <div className="flex justify-center space-x-6 mb-12 fade-in" style={{ animationDelay: '0.5s' }}>
-          <div className="text-center">
-            <div className="cyberpunk-digit">{timeLeft.days}</div>
-            <div className="cyberpunk-label">Days</div>
+        {/* Inclusions */}
+        <div className="bg-card rounded-lg p-8 shadow-card mb-12">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl font-heading font-semibold text-foreground mb-2">
+              What's Included
+            </h3>
+            <p className="text-muted-foreground">Your registration fee covers all these benefits</p>
           </div>
-          <div className="text-center">
-            <div className="cyberpunk-digit">{timeLeft.hours}</div>
-            <div className="cyberpunk-label">Hours</div>
-          </div>
-          <div className="text-center">
-            <div className="cyberpunk-digit">{timeLeft.minutes}</div>
-            <div className="cyberpunk-label">Minutes</div>
-          </div>
-          <div className="text-center">
-            <div className="cyberpunk-digit">{timeLeft.seconds}</div>
-            <div className="cyberpunk-label">Seconds</div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4 shadow-elegant">
+                <UtensilsCrossed size={24} className="text-primary-foreground" />
+              </div>
+              <h4 className="font-heading font-semibold text-foreground mb-2">Lunch Provided</h4>
+              <p className="text-sm text-muted-foreground">Complimentary lunch for all registered participants</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-glow">
+                <Coffee size={24} className="text-accent-foreground" />
+              </div>
+              <h4 className="font-heading font-semibold text-foreground mb-2">Snacks Included</h4>
+              <p className="text-sm text-muted-foreground">Refreshing snacks and beverages throughout the day</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4 shadow-elegant">
+                <Calendar size={24} className="text-primary-foreground" />
+              </div>
+              <h4 className="font-heading font-semibold text-foreground mb-2">Event Access</h4>
+              <p className="text-sm text-muted-foreground">Access to technical and non-technical events</p>
+            </div>
           </div>
         </div>
 
         {/* Important Dates */}
-        <div className="flex flex-col items-center space-y-3 mb-8">
-          <div className="flex items-center space-x-2 text-muted-foreground fade-in" style={{ animationDelay: '0.6s' }}>
-            <Calendar size={20} />
-            <span className="font-medium">Online Registration Ends: March 14, 2026</span>
-          </div>
-          <div className="flex items-center space-x-2 text-primary glow-text text-lg fade-in" style={{ animationDelay: '0.65s' }}>
-            <Calendar size={22} />
-            <span className="font-semibold">Event Date: March 16, 2026</span>
-          </div>
-        </div>
-
-        <div className="flex justify-center space-x-6 fade-in" style={{ animationDelay: '0.8s' }}>
-          <Button 
-            variant="primary"
-            size="lg"
-            className="text-lg px-8 py-4 cyberpunk-button-primary"
-            onClick={() => window.open('https://forms.gle/quw6AkwY9np5g1HVA', '_blank')}
-          >
-            REGISTER HERE
-          </Button>
-          <Button 
-            variant="outline"
-            size="lg"
-            className="text-lg px-8 py-4 cyberpunk-button-outline"
-            onClick={() => {
-              const eventsSection = document.getElementById('events');
-              eventsSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            EXPLORE EVENTS
-          </Button>
-        </div>
-
-        {/* Quick Info */}
-        <div className="flex justify-center items-center space-x-8 mt-12 text-sm text-muted-foreground fade-in" style={{ animationDelay: '1s' }}>
-          <div className="flex items-center space-x-2">
-            <Users size={16} />
-            <span>Open to All Students</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Clock size={16} />
-            <span>Technical & Non-Technical Events</span>
+        <div className="text-center bg-primary/10 rounded-lg p-6 border border-primary/20">
+          <h3 className="text-xl font-heading font-semibold text-foreground mb-4">
+            Important Dates
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <span className="font-medium text-primary">Online Registration Deadline:</span>
+              <br />
+              <span className="text-muted-foreground">March 14, 2026</span>
+            </div>
+            <div>
+              <span className="font-medium text-accent">Event Date:</span>
+              <br />
+              <span className="text-muted-foreground">March 16, 2026</span>
+            </div>
           </div>
         </div>
       </div>
@@ -178,4 +133,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Registration;
