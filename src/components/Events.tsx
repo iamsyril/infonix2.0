@@ -8,16 +8,16 @@ const Events = () => {
   const nonTechHeaderReveal = useScrollReveal();
   const noteReveal = useScrollReveal();
   const timelineEvents = [
-    { time: '9.30am - 10.30am', event: 'Inauguration', venue: 'Main Hall', icon: Mic, type: 'ceremony' },
-    { time: '10.30am - 11.00am', event: 'Tea Break & Snacks', venue: 'Cafeteria', icon: Coffee, type: 'break' },
+    { time: '9.30am - 10.30am', event: 'Inauguration', venue: 'Mini Conference Hall', icon: Mic, type: 'ceremony' },
+    { time: '10.30am - 11.00am', event: 'Tea Break & Snacks', venue: 'College Campus', icon: Coffee, type: 'break' },
     { time: '11.00am - 3.00pm', event: 'Paper Presentation', venue: 'Mini Conference Hall', icon: Presentation, type: 'technical' },
-    { time: '11.00am - 1.00pm', event: 'Quiz Master', venue: 'Smart Class', icon: Brain, type: 'technical' },
-    { time: '11.00am - 1.00pm', event: 'Myth Smash', venue: '2nd Yr Class', icon: Hammer, type: 'non-technical' },
-    { time: '12.00pm - 3.30pm', event: 'Debugging', venue: 'IT Lab 1', icon: Bug, type: 'technical' },
-    { time: '12.00pm - 2.30pm', event: 'Tune Hunt', venue: '3rd Class', icon: Music, type: 'non-technical' },
+    { time: '11.00am - 1.00pm', event: 'Quiz Master', venue: 'LH-6', icon: Brain, type: 'technical' },
+    { time: '11.00am - 1.00pm', event: 'Myth Smash', venue: 'LH-17', icon: Hammer, type: 'non-technical' },
+    { time: '11.00am - 3.00pm', event: 'Debugging', venue: 'IT Lab 1', icon: Bug, type: 'technical' },
+    { time: '12.00pm - 2.30pm', event: 'Tune Hunt', venue: 'LH-16', icon: Music, type: 'non-technical' },
     { time: '1.15pm - 2.00pm', event: 'Lunch', venue: 'Mess', icon: UtensilsCrossed, type: 'break' },
     { time: '2.00pm - 3.00pm', event: 'E-Sports', venue: 'IT Lab 2', icon: Gamepad2, type: 'non-technical' },
-    { time: '2.00pm - 3.30pm', event: 'Dialo Box', venue: '2nd Class', icon: MessageSquare, type: 'non-technical' },
+    { time: '2.00pm - 3.00pm', event: 'Dialo Box', venue: 'LH-17', icon: MessageSquare, type: 'non-technical' },
     { time: '4.00pm - 5.00pm', event: 'Certificate & Prize Distribution', venue: 'Mini Conference Hall', icon: Award, type: 'ceremony' },
   ];
   const technicalEvents = [
