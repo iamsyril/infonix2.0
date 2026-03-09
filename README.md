@@ -12,7 +12,7 @@ The **Infonix 2.0** website is designed with a **modern, minimal, and elegant th
 It combines simplicity and tech aesthetics — giving participants a smooth, engaging, and informative experience.
 
 ### 🔗 Live Website  
-👉 [Visit Infonix 2.0 Website](https://infonix2k25.netlify.app/)
+👉 [Visit Infonix 2.0 Website](https://infonix20.netlify.app/)
 
 
 ---
