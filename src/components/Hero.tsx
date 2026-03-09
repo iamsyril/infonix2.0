@@ -12,7 +12,7 @@ const Hero = () => {
   });
 
   useEffect(() => {
-     const targetDate = new Date('2026-01-30T09:00:00').getTime();
+     const targetDate = new Date('2026-03-16T00:00:00').getTime();
 
 
     const updateCountdown = () => {
@@ -89,9 +89,9 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
         {/* Title */}
         <h1 className="text-6xl lg:text-8xl font-heading font-bold tracking-tight mb-6 fade-in">
-          <span className="text-primary glow-text">INFONIX</span>
+          <span className="text-primary glow-text">INFONIX 2.0</span>
           <br />
-          <span className="text-accent text-4xl lg:text-6xl">2.0</span>
+
         </h1>
         
         <div className="w-full max-w-md mx-auto h-1 bg-gradient-to-r from-transparent via-primary to-transparent mb-6 fade-in" style={{ animationDelay: '0.2s' }}></div>
@@ -132,11 +132,11 @@ const Hero = () => {
         <div className="flex flex-col items-center space-y-3 mb-8">
           <div className="flex items-center space-x-2 text-muted-foreground fade-in" style={{ animationDelay: '0.6s' }}>
             <Calendar size={20} />
-            <span className="font-medium">Online Registration Ends: January 28, 2026</span>
+            <span className="font-medium">Online Registration Ends: March 14, 2026</span>
           </div>
           <div className="flex items-center space-x-2 text-primary glow-text text-lg fade-in" style={{ animationDelay: '0.65s' }}>
             <Calendar size={22} />
-            <span className="font-semibold">Event Date: January 30, 2026</span>
+            <span className="font-semibold">Event Date: March 16, 2026</span>
           </div>
         </div>
 
