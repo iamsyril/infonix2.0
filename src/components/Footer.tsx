@@ -11,11 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               {/* Removed the extra box so the logo sits directly on the footer background */}
-              <img 
-                src={infonixLogo} 
-                alt="Infonix Logo" 
-                className="h-12 w-auto object-contain drop-shadow-md"
-              />
+              
               <span className="font-heading font-bold text-xl">Infonix 2.0</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
