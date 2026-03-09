@@ -119,12 +119,12 @@ const Registration = () => {
             <div>
               <span className="font-medium text-primary">Online Registration Deadline:</span>
               <br />
-              <span className="text-muted-foreground">January 28, 2026</span>
+              <span className="text-muted-foreground">March 14, 2026</span>
             </div>
             <div>
               <span className="font-medium text-accent">Event Date:</span>
               <br />
-              <span className="text-muted-foreground">January 30, 2026</span>
+              <span className="text-muted-foreground">March 16, 2026</span>
             </div>
           </div>
         </div>
