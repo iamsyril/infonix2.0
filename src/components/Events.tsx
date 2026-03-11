@@ -13,7 +13,7 @@ const Events = () => {
     { time: '11.00am - 3.00pm', event: 'Paper Presentation', venue: 'Mini Conference Hall', icon: Presentation, type: 'technical' },
     { time: '11.00am - 1.00pm', event: 'Quiz Master', venue: 'LH-6', icon: Brain, type: 'technical' },
     { time: '11.00am - 1.00pm', event: 'Myth Smash', venue: 'LH-17', icon: Hammer, type: 'non-technical' },
-    { time: '11.00am - 3.00pm', event: 'Debugging', venue: 'IT Lab 1', icon: Bug, type: 'technical' },
+    { time: '11.00am - 3.00pm', event: 'Bug Buster', venue: 'IT Lab 1', icon: Bug, type: 'technical' },
     { time: '12.00pm - 2.30pm', event: 'Tune Hunt', venue: 'LH-16', icon: Music, type: 'non-technical' },
     { time: '1.15pm - 2.00pm', event: 'Lunch', venue: 'Mess', icon: UtensilsCrossed, type: 'break' },
     { time: '2.00pm - 3.00pm', event: 'E-Sports', venue: 'IT Lab 2', icon: Gamepad2, type: 'non-technical' },
